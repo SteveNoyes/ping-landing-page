@@ -12,6 +12,10 @@
 /*
 - font weights: 300, 600, 700 
 */
+/* CRUD */
+#inputError { border: 1px solid red; }
+.err { border: 1px solid #b1395f; }
+.emsg { color: #c12020; }
 /* General */
 body {
   font-size: 20px;
@@ -59,9 +63,6 @@ form input {
 }
 form input:focus {
   outline: none;
-}
-#inputError {
-  border: 1px solid red;
 }
 form button {
   flex: 1;
@@ -145,9 +146,4 @@ i:hover {
   .dashboardImg {
     width: 60%;
   }
-}
-
-.err { border: 1px solid #b1395f; }
-.emsg { 
-  color: #c12020; 
 }
