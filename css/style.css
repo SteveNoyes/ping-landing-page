@@ -14,7 +14,7 @@
 */
 /* CRUD */
 #inputError { border: 1px solid red; }
-.err { border: 1px solid #b1395f; }
+.err { border: 1px solid #b1395f!important; }
 .emsg { color: #c12020; }
 /* General */
 body {
