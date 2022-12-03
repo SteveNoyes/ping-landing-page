@@ -9,13 +9,7 @@
   --gray: hsl(0, 0%, 59%);
   --very-dark-blue: hsl(209, 33%, 12%);
 }
-/*
-- font weights: 300, 600, 700 
-*/
-/* CRUD */
-#inputError { border: 1px solid red; }
-.err { border: 1px solid #b1395f!important; }
-.emsg { color: #c12020; }
+/* Font Weights: 300, 600, 700 */
 /* General */
 body {
   font-size: 20px;
@@ -64,19 +58,6 @@ form input {
 form input:focus {
   outline: none;
 }
-form button {
-  flex: 1;
-  padding: 1rem;
-  border-radius: 25px;
-  border: none;
-  background-color: var(--blue);
-  color: white;
-  margin-bottom: 4rem;
-}
-form button:hover {
-  cursor: pointer;
-  background-color: var(--pale-blue);
-}
 .emailInput {
   border-radius: 25px;
   border: 1px solid var(--pale-blue);
@@ -91,6 +72,21 @@ form button:hover {
 .emailInput::-ms-input-placeholder {
   color: var(--pale-blue);
 }
+.err { border: 1px solid var(--light-red)!important; }
+.emsg { color: var(--light-red); }
+form button {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--blue);
+  color: white;
+  margin-bottom: 4rem;
+}
+form button:hover {
+  cursor: pointer;
+  background-color: var(--pale-blue);
+} 
 
 /* Img */
 .dashboardImg {
