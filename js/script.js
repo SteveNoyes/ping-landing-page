@@ -17,9 +17,13 @@ function ValidateEmail(inputText) {
   //   error.innerHTML = "Whoops! It looks like you forgot to add your email";
   // }
 
-  if(inputText.value = ' ') {
+  // if inputText is empty
+  if(inputText.value == '') {
+    // add error class
     field.classList.add("err");
+    // add error message
     error.innerHTML = "Whoops! It looks like you forgot to add your email";
+
   } else if(inputText.value !== mailformat) {
     field.classList.remove("err");
     error.innerHTML = "Please provide a valid email address";
