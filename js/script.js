@@ -1,15 +1,13 @@
 function ValidateEmail(inputText) {
-  // initialize variables
+  // initialize local scope variables
   let field = document.getElementById("femail");
   let error = document.getElementById("errorDiv");
   // regex pattern
   let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
+  // if inputText follows regex
   if(inputText.value.match(mailformat)) {
     // remove error class
     field.classList.remove("err");
-    // temorary message
-    error.innerHTML = "You did it";
   // else if inputText is empty
   } else if(inputText.value == '') {
     // add error class

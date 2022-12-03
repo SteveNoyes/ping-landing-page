@@ -59,6 +59,7 @@ form input:focus {
   outline: none;
 }
 .emailInput {
+  width: 92%;
   border-radius: 25px;
   border: 1px solid var(--pale-blue);
 }
@@ -72,8 +73,12 @@ form input:focus {
 .emailInput::-ms-input-placeholder {
   color: var(--pale-blue);
 }
-.err { border: 1px solid var(--light-red)!important; }
-.emsg { color: var(--light-red); }
+.err { 
+  border: 1px solid var(--light-red)!important; 
+}
+.emsg { 
+  color: var(--light-red); 
+}
 form button {
   flex: 1;
   padding: 1rem;
@@ -87,7 +92,6 @@ form button:hover {
   cursor: pointer;
   background-color: var(--pale-blue);
 } 
-
 /* Img */
 .dashboardImg {
   width: 100%;
@@ -128,16 +132,17 @@ i:hover {
     flex-direction: row;
     width: 60%;
   }
-  form input {
-    flex: .6;
-  }
+
   input.emailInput {
     padding: 0 0 0 1rem;
     height: 50px;
-    margin-right: 1rem;
+    width: 400px;
+  }
+  #errorDiv {
+    flex-direction: column!important;
   }
   form button {
-    flex: .4;
+    margin-left: 2rem;
   }
   .dashboardImg {
     width: 60%;
